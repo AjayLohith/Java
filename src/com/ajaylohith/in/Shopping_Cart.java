@@ -9,7 +9,7 @@ public class Shopping_Cart {
         Scanner sc=new Scanner(System.in);
         String item;
         int quantity;
-        float price;
+        float rate;
         String toBePaid;
 
         System.out.print("Enter item:");
@@ -19,9 +19,9 @@ public class Shopping_Cart {
         quantity=sc.nextInt();
 
         System.out.print("Price:");
-        price=sc.nextFloat();
+        rate=sc.nextFloat();
 
-        float ans=quantity*price;
+        float ans=quantity*rate;
 
         toBePaid= NumberFormat.getCurrencyInstance().format(ans);
 
